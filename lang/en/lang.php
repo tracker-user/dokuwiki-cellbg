@@ -1,2 +1,2 @@
 <?php
-$lang['toolbar_title'] = 'Cell background';
+$lang['js']['toolbar_title'] = 'Cell background';

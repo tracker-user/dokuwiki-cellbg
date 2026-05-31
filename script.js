@@ -50,11 +50,18 @@
         }
     }
 
+    /* Resolve the localized toolbar title from the JS lang bundle.
+       LANG.plugins.cellbg.toolbar_title is populated from $lang['js']['toolbar_title']
+       in lang/<iso>/lang.php; fall back to English if the bundle is missing. */
+    var toolbarTitle = (typeof window.LANG !== 'undefined' &&
+        LANG.plugins && LANG.plugins.cellbg &&
+        LANG.plugins.cellbg.toolbar_title) || 'Cell background';
+
     /* Register the toolbar button before initToolbar() fires. */
     if (typeof window.toolbar !== 'undefined') {
         toolbar.push({
             type:    'picker',
-            title:   'Cell background',
+            title:   toolbarTitle,
             icon:    '../../plugins/cellbg/images/cellbg.png',
             list:    pickerList,
             'class': 'cellbg_picker'

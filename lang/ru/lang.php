@@ -1,2 +1,2 @@
 <?php
-$lang['toolbar_title'] = 'Фон ячейки';
+$lang['js']['toolbar_title'] = 'Фон ячейки';

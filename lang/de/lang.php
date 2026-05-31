@@ -1,2 +1,2 @@
 <?php
-$lang['toolbar_title'] = 'Zellhintergrund';
+$lang['js']['toolbar_title'] = 'Zellhintergrund';
